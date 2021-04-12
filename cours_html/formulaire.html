@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un premier formulaire</title>
+</head>
+<body>
+
+    <a href="index.html"><button>Retour</button></a>
+    <form action="mailto:jeremy@gmail.com" method="post">
+        <table>
+            <tr>
+                <td><label for="formName">Entrez votre nom</label></td>
+                <td colspan="2"><input type="text" id="formName" name="forName"></td>
+            </tr>
+            <tr>
+                <td><label for="formMail">Entrez votre adresse e-mail</label></td>
+                <td colspan="2"><input type="email" id="formMail" name="formMail"></td>
+            </tr>
+            <tr>
+                <td>Etes-vous client de la fnac ?</td>
+                
+                <td><label for="OUI">OUI</label>
+                <input type="radio" id="oui" name="formRadio" value="oui" checked>
+                
+                <label for="NON">NON</label>
+                <input type="radio" id="non" name="formRadio" value="non"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Envoyer"></td>
+                <td><input type="reset" value="Annuler"></td>
+            </tr>
+
+        </table>
+    </form>
+    
+</body>
+</html>

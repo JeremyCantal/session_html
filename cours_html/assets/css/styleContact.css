@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+header, nav, aside, section, footer, article{
+    display: block;
+}
+
+header {
+    background-color: grey;
+}
+
+nav {
+    background-color: rgb(72, 137, 233);
+    float: left;
+    width: 20%;
+    height: 350px;
+}
+
+article {
+    background-color: rgb(226, 101, 226);
+    width: 80%;
+}
+
+aside {
+    float: right;
+    width: 20%;
+    background-color: rgb(188, 226, 149);
+    height: 350px;
+
+}
+
+footer {
+    clear: both;
+    background-color: rgb(17, 15, 15);
+    color : white;
+}

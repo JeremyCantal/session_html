@@ -1,0 +1,52 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Création d'une classe CSS avec le sélecteur . */
+p.info {
+    background-color: rgba(201, 52, 214, 0.631);
+}
+
+.premier {
+    font-size: 30px;
+}
+
+#font {
+    font-family: Serif;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+/* Sélecteur déscendant 
+   Ici on cible tous les enfants li de la balise ul */
+ul > li{
+    list-style: square;
+    color: blue;
+    background-color: #FF4040;
+    margin: 14px;
+}
+
+p.rouge {
+    color: red;
+}
+
+.vert {
+
+}
+
+.noir {
+
+}
+div.code {
+    font-family: Courier New;
+}
+
+div.exemple {
+    font-family: Courier;
+}
+ol > li {
+    background-color: yellow;
+}
