@@ -2,7 +2,7 @@ div.entete {
     border: solid transparent 1px;
     text-align: center;
     background-color:rgba(173, 197, 221, 0.487);
-    box-shadow: 10px 10px 5px;
+    box-shadow: 10px 10px 5px grey;
     border-radius: 15px;
     margin-bottom: 10px;
     margin-left: 30px;
@@ -25,7 +25,7 @@ div.adresse {
 div.conteneur {
     border: solid transparent 1px;
     background-color:rgba(173, 197, 221, 0.487);
-    box-shadow: 10px 10px 5px;
+    box-shadow: 10px 10px 5px grey;
     border-radius: 15px;
     margin-bottom: 10px;
     margin-left: 30px;

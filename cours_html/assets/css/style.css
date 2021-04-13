@@ -29,6 +29,18 @@ ul > li{
     margin: 14px;
 }
 
+@font-face{
+    font-family: 'police';
+    src: url('../fonts/Game\ On_PersonalUseOnly.ttf')
+}
+
+body{
+    font-family: 'police';
+    background: linear-gradient(to bottom right, blue, white);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 p.rouge {
     color: red;
 }
