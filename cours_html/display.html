@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <div class="un" style="display:block">
+        Ce texte est affiché dans une balise de type block
+        <div class="deux" style="display:inline">
+            Ce texte est affiché dans une balise de type inline
+        </div>
+        
+        <div class="trois">
+            Ce texte est affiché dans une balise de type bloc
+        </div>
+        
+    </div>
+
+    <hr>
+
+    <div class="un" style="display: table;">
+        Ce texte est affiché dans une balise div dont la propriété display vaut table.
+        <div class="deux" style="display: table-row">Ce texte est affiché dans une balise div dont la propriété display
+            vaut table-row
+            <div class="trois" style="display: table-cell">ce texte est affiché dans une balise div de type "tablecell"</div>
+                
+                <div class="trois" style="display: table-cell">ce texte est affiché dans une autre balise div de type "tablecell"</div>
+            </div>
+            <div class="deux" style="display: table-row">On recommence avec une nouvelle ligne
+                <div class="trois" style="display: table-cell">Une première cellule</div>
+                <div class="trois" style="display: table-cell">Et une deuxième</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia ut aut natus ab veniam vitae sapiente beatae delectus. Cupiditate sunt excepturi quidem, harum iusto libero soluta molestias nihil assumenda?*
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia ut aut natus ab veniam vitae sapiente beatae delectus. Cupiditate sunt excepturi quidem, harum iusto libero soluta molestias nihil assumenda?*
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia ut aut natus ab veniam vitae sapiente beatae delectus. Cupiditate sunt excepturi quidem, harum iusto libero soluta molestias nihil assumenda?*
+    </p>
+    <hr>
+
+    <!-- <div id="col1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia ut aut natus ab veniam vitae sapiente beatae delectus. Cupiditate sunt excepturi quidem, harum iusto libero soluta molestias nihil assumenda?*
+    </div>
+    <div id="col2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates adipisci nam laudantium error enim atque rerum amet minima repudiandae officia consectetur possimus ratione, distinctio iste autem incidunt sequi tempore fugiat.
+        Autem fugiat veniam ipsam sequi qui inventore dolores cumque non quidem quam illo ipsum earum obcaecati, esse repellendus assumenda possimus nulla officia doloribus asperiores? Commodi, dolorem. Laborum porro consectetur exercitationem.
+        Quisquam, dolor unde impedit cumque iste officiis nemo reiciendis aperiam in sed totam iure quod fugit minus voluptatem aliquam hic eius illum ullam, aspernatur voluptate amet praesentium architecto. Est, dicta?
+    </div>
+    <div id="col3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt mollitia doloribus quam iure natus corporis consequuntur ipsam enim ducimus amet beatae nisi a id distinctio vitae, dolorem provident? Sint, assumenda.
+        Officiis possimus atque doloribus, dignissimos ab praesentium soluta maiores repellendus vero molestiae eaque eos ipsam enim porro, iste ipsum delectus impedit quia a corporis eius beatae. Temporibus eos maiores laboriosam.
+        Ullam voluptate necessitatibus, cupiditate quam autem fuga nam, corporis architecto debitis consequuntur modi magni odit quos accusamus. Illo accusantium fuga suscipit ex? Laborum, sunt veritatis illum alias pariatur modi nemo!
+    </div> -->
+
+    <hr>
+    <div class="multi-col">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ipsum autem eligendi atque mollitia? Maxime id, non exercitationem, aliquid, nam eum odit commodi delectus suscipit tenetur nesciunt nobis iste cupiditate?
+        Ipsam, ut quod culpa nam adipisci earum minus molestiae commodi, obcaecati sequi temporibus quisquam ab tenetur maiores explicabo veritatis ad. Harum praesentium officia facere adipisci voluptatem est, velit quidem corrupti.
+        Beatae aspernatur ducimus ratione, saepe, doloribus reiciendis placeat et tempora accusantium dignissimos exercitationem voluptatum rem quam qui culpa porro harum. Cum natus odio exercitationem suscipit autem eaque at culpa praesentium.
+    </div>
+    <style>
+
+        .multi-col{
+            column-width: 150px;
+            -moz-column-width: 150px;
+            -webkit-column-width: 150px;
+            column-count: 4;
+        }
+
+        #col1{
+            float: left;
+            width: 150px;
+            background: #66CCFF;
+        }
+
+        #col2{
+            float: right;
+            width: 300px;
+            background: #FFFFCC;
+        }
+       
+        #col3{
+            background: #58da72;
+        }
+
+        p{
+            display:inline-block;
+            text-align: left;
+            background-color:#dce;
+            width: 150px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .un{
+            border: 1px solid #ff0000;
+            margin: 10px;
+            padding: 10px;
+        }
+        .deux{
+            border: 1px solid #00ff00;
+            margin: 2px;
+            padding: 2px;
+        }
+        .trois{
+            border: 1px solid #0000ff;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</body>
+</html>

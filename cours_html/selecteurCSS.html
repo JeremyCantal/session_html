@@ -16,7 +16,248 @@
         - E :first-child => Un élément E aussi le premier enfant de son élément parent
         - E:active, E:hover, E:focus => Correspond à l'élément E au cours de 
           certaines actions de l'utilisateur.
-        
+        - E[foo="warning"] => Tout élément E dont l'attribut 'foo' a 
+          éxactement la valeur 'warning'
      -->
+    <div>
+        <p>Je suis le premier paragraphe</p>
+        <p>Je suis le deuxième paragraphe</p>
+        <p>Je suis le troisième paragraphe</p>
+    </div>
+    <hr>
+    <input type="text" placeholder="Entrez un nom">
+    <hr>
+
+    <p class="exemple">Je n'ai pas d'attribut title</p>
+    <p class="exemple" title="comment">J'ai un attribut title 'comment'</p>
+    <p class="exemple" title="evaluation">J'ai un attribut title 'evaluation'</p>
+
+    <p class="exemple" title="essai">J'ai un attribut title 'essai'</p>
+    <p class="exemple" title="esso">J'ai un attribut title 'esso'</p>
+    <hr>
+    <div class="exemple">
+        <div>Je suis l'élément div (élément particulier)</div>
+        <p>Je suis un p qui suit le div</p>
+        <p>Je suis un p qui suit le div</p>
+        <span>Je suis un span</span>
+        <p>Je suis un p qui ne suit pas le div</p>
+
+    </div>
+
+    <hr>
+    <table class="exampleTable">
+        <tr>
+            <td>1ère ligne</td>
+        </tr>
+        <tr>
+            <td>2 ème ligne</td>
+        </tr>
+        <tr>
+            <td>3ème ligne</td>
+        </tr><tr>
+            <td>4ème ligne</td>
+        </tr><tr>
+            <td>5ème ligne</td>
+        </tr><tr>
+            <td>6ème ligne</td>
+        </tr><tr>
+            <td>7ème ligne</td>
+        </tr><tr>
+            <td>8ème ligne</td>
+        </tr>
+    </table>
+
+
+    <hr>
+
+
+    <table class="exampleTable2">
+        <tr>
+            <td>1ère ligne</td>
+        </tr>
+        <tr>
+            <td>2 ème ligne</td>
+        </tr>
+        <tr>
+            <td>3ème ligne</td>
+        </tr><tr>
+            <td>4ème ligne</td>
+        </tr><tr>
+            <td>5ème ligne</td>
+        </tr><tr>
+            <td>6ème ligne</td>
+        </tr><tr>
+            <td>7ème ligne</td>
+        </tr><tr>
+            <td>8ème ligne</td>
+        </tr>
+    </table>
+
+
+    <style>
+        div p:first-child{
+            font-weight: bold;
+        }
+        input[type="text"]:focus{
+            background: rgb(201, 196, 196);
+        }
+        p.exemple{
+            margin: 0;
+            padding: 10px;
+            color: black;
+        }
+
+        /* [attr^="stringValue"]
+        Permet de sélectionner un élément DOM dont l'attribut 'attr' commence éxactement
+        par 'stringValue'
+        - Ici, permet d'appliquer du style à toute les balises p dont la valeur
+        de l'attribut title commence par 'ess' */
+
+        p.exemple[title^="ess"]{
+                color: blue;
+                background: red;
+            }
+
+        /* [attr$="stringValue"]
+        Permet de sélectionner un élément DOM dont l'attribut 'attr' finit éxactement
+        par 'stringValue'
+        - Ici, permet d'appliquer du style à toute les balises p dont la valeur
+        de l'attribut title finit par 'ess' */
+
+        p.exemple[title$="ent"]{
+            color: rgb(194, 63, 190);
+            background: rgb(200, 230, 5);
+        }
+
+        /* [attr*="stringValue"]
+            Permet de sélectionner un élément DOM dont l'attribut 'attr' contient 'stringValue'
+            - Ici, permet d'appliquer du style à toute les balises p dont la valeur
+            de l'attribut title contient 'val' */
+
+        p.exemple[title*="val"]{
+            color: rgb(197, 206, 30);
+            background: rgb(117, 186, 78);
+        }
+
+        div.exemple div ~ p{
+            color: #fff;
+            margin: 20px;
+            width: 200px;
+            padding: 5px;
+            border:1px solid black;
+            background: #006644;
+        }
+
+
+        .exampleTable, .exampleTable2{
+            width: 100%;
+            border: 1px solid #444;
+            text-shadow: 2px 2px 5px #111;
+        }
+        /* Tous les enfants aux numéros pairs */
+        .exampleTable tr:nth-child(even){
+            background: #999999;
+            
+            color: #fff;
+        }
+
+        /* Tous les enfants aux numéros impairs */
+        .exampleTable tr:nth-child(odd){
+            background: #990000;
+            color: #fff;
+        }
+
+        /* Tous les 3 enfants */
+        .exampleTable tr:nth-child(3n){
+            background: #491bc7;
+            color: #fff;
+    }
+
+        /* le 7ème enfant */
+        .exampleTable tr:nth-child(7){
+            background: #24ba1c;
+            color: #fff;
+        }
+        /* Tous les enfants aux numéros impairs en partant de la fin */
+        .exampleTable2 tr:nth-last-child(odd){
+            background: #df3fda;
+            color: #fff;
+        }
+
+        /* Les 2 derniers enfants depuis la fin */
+        .exampleTable2 tr:nth-last-child(-n+2){
+            background: #36b2eb;
+            color: #fff;
+        }
+        /* le 7ème enfant en partant de la fin */
+        .exampleTable2 tr:nth-last-child(7){
+            background: #24ba1c;
+            color: #fff;
+        }
+
+     </style>
+
+
+     <hr>
+     <br>
+     <hr>
+     <br>
+     <hr>
+    
+
+
+
+     <div class="brass">Texte dans un div de classe brass</div>
+     <div class="br56">Texte dans un div de classe b56</div>
+     <div class="st45">Texte dans un div de classe st45</div>
+     <div class="lo">Texte dans un div de classe lo</div>
+     <ol>
+         <li>un</li>
+         <li>deux</li>
+         <li>trois</li>
+         <li>quatre</li>
+         <li>cinq</li>
+     </ol>
+     <form>
+         <input type="checkbox" checked><label>premier</label>
+         <input type="checkbox" checked><label>deuxième</label>
+         <input type="checkbox"><label>troisième</label>
+     </form>
+     <style>
+         /* 1) */
+        div[class^="br"]{
+            color: blue;
+            background: red;
+        }
+        /* 2) */
+        div[class*="t"]{
+            color: rgb(197, 206, 30);
+            background: rgb(117, 186, 78);
+        }
+        /* 3) */
+        ol > li:nth-last-child(2){
+            background: #1dcbe2;
+            color: #fff;
+        }
+        /* 4) */
+        ol[class="t"] li:nth-child(3){
+            background: #1c5bba;
+            color: rgb(162, 32, 32);
+        }
+        /* 5) */
+        input[type=checkbox]:checked + label{
+            color: blue;
+            background: rgb(131, 124, 124);
+        }
+
+     </style>
+     
+     <!-- Quelle syntaxe utiliser pour s'adresser :
+ 1) Aux éléments div dont l'attribut class commence par "br"
+ 2) Aux éléments div dont l'attribut class contient la lettre "t"
+ 3) L'avant-dernier élément li enfant de ol
+ 4) Le troisième enfant li de l'élément ol de classe "t"
+ 5) Les éléments checkbox qui sont cochés -->
+
 </body>
 </html> 
